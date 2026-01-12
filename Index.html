@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>caccia al tesoro</title>
+    <script>
+        function verifica() {
+            const risposta = document.getElementById("codice").value;
+            const codiceCorretto = "Lorenzo"; 
+
+            if (risposta === codiceCorretto) {
+                window.location.href = "pagina_successiva.html";
+            } else {
+                alert("risposta errata!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1> Caccia al tesoro</h1>
+    <p1> ciao Arianna questa è la caccia al tesoro che Alessandro ha preparato per te, in ogni caso ti dirò dove cercare.</p1>
+    
+    
+    <p1>
+        alle medie c'era un ragazzo molto amico con Alessandro, loro due andavo perfino alle elementari insieme, sai dirmi chi è?
+    
+    </p1>
+    
+    <input type="text" id="codice" placeholder="Inserisci la risposta">
+    <button onclick="verifica()">Invia</button>
+</body>
+</html>
